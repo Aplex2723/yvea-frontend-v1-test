@@ -1,0 +1,185 @@
+{
+  "buyer": [
+    {
+      "id": 1,
+      "orderBy": true,
+      "displayName": "company_name",
+      "orderField": "name"
+    },
+    {
+      "id": 2,
+      "orderBy": true,
+      "displayName": "country",
+      "orderField": "country"
+    },
+    {
+      "id": 4,
+      "orderBy": true,
+      "displayName": "email",
+      "orderField": "email"
+    },
+    {
+      "id": 5,
+      "orderBy": true,
+      "displayName": "phone",
+      "orderField": "phone"
+    },
+    {
+      "id": 6,
+      "orderBy": true,
+      "displayName": "address",
+      "orderField": "address"
+    },
+    {
+      "id": 6,
+      "orderBy": true,
+      "displayName": "actions",
+      "orderField": "actions"
+    }
+  ],
+  "countries": [
+    {
+      "id": 1,
+      "orderBy": true,
+      "displayName": "country",
+      "orderField": "name"
+    }
+  ],
+  "documents": [
+    {
+      "id": 1,
+      "orderBy": false,
+      "displayName": "folder_name",
+      "orderField": "status"
+    }
+  ],
+  "nomenclature_docs": [
+    {
+      "id": 1,
+      "orderBy": false,
+      "displayName": "nomenclature_code",
+      "orderField": "status"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "orderBy": true,
+      "displayName": "name",
+      "orderField": "first_name"
+    },
+    {
+      "id": 2,
+      "orderBy": true,
+      "displayName": "last_name",
+      "orderField": "last_name"
+    },
+    {
+      "id": 3,
+      "orderBy": true,
+      "displayName": "email",
+      "orderField": "email"
+    },
+    {
+      "id": 4,
+      "orderBy": true,
+      "displayName": "phone",
+      "orderField": "phone"
+    },
+    {
+      "id": 8,
+      "orderBy": true,
+      "displayName": "address",
+      "orderField": "address"
+    },
+    {
+      "id": 9,
+      "orderBy": true,
+      "displayName": "postal_code",
+      "orderField": "postal_code"
+    },
+    {
+      "id": 10,
+      "orderBy": true,
+      "displayName": "city",
+      "orderField": "city"
+    },
+    {
+      "id": 6,
+      "orderBy": true,
+      "displayName": "name_enterprise",
+      "orderField": "company_name"
+    },
+    {
+      "id": 7,
+      "orderBy": true,
+      "displayName": "company_type",
+      "orderField": "fiscal_number"
+    },
+    {
+      "id": 5,
+      "orderBy": true,
+      "displayName": "fiscal_number",
+      "orderField": "fiscal_number"
+    },
+    {
+      "id": 11,
+      "orderBy": false,
+      "displayName": "actions",
+      "orderField": "status"
+    }
+  ],
+  "certificates": [
+    {
+      "id": 1,
+      "orderBy": false,
+      "displayName": "request",
+      "orderField": "title"
+    },
+    {
+      "id": 2,
+      "orderBy": false,
+      "displayName": "date",
+      "orderField": "inspection_date"
+    },
+    {
+      "id": 3,
+      "orderBy": false,
+      "displayName": "certificate_cost",
+      "orderField": "total_cost"
+    },
+
+    {
+      "id": 4,
+      "orderBy": false,
+      "displayName": "providers",
+      "orderField": "fiscal_number"
+    },
+    {
+      "id": 5,
+      "orderBy": true,
+      "displayName": "status",
+      "orderField": "status"
+    },
+    {
+      "id": 6,
+      "orderBy": false,
+      "displayName": "actions",
+      "orderField": ""
+    }
+  ],
+  "nomenclature_codes": [
+    {
+      "id": 1,
+      "orderBy": false,
+      "displayName": "code",
+      "orderField": "code"
+    },
+    {
+      "id": 2,
+      "orderBy": false,
+      "displayName": "monetary_value",
+      "orderField": "amount"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: light;
+  }
+  body {
+    color: black;
+    background: white;
+  }
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.visit-button:hover{
+  background-color: rgba(127, 85, 217, 0.1);
+}
+
+.hidden-scrollbar{
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: transparent transparent; /* For Firefox */
+  overflow: auto; /* For other browsers */
+}
+
+/* WebKit (Chrome, Safari) */
+.hidden-scrollbar::-webkit-scrollbar {
+  width: 0px;
+}
+
+.hidden-scrollbar::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+/* Optional: You can customize other scrollbar properties as well */
+.hidden-scrollbar::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+:focus-visible {
+  outline: none;
+}
