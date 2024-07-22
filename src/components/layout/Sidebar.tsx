@@ -43,7 +43,9 @@ export default function Sidebar() {
   };
 
   const token = getCookie('access_token'); // Retrieve the token from cookies
+  console.log(`JWT: ${token}`)
   const exportAssistantLink = `https://export-assistant.azurewebsites.net/?token=${token}`; // Construct the URL for Export Assistant
+  console.log(`Link to assistant: ${exportAssistantLink}`)
 
   return (
     <Drawer
