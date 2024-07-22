@@ -5,6 +5,7 @@ import FlagOutlinedIcon from '@mui/icons-material/FlagOutlined';
 import PeopleOutlinedIcon from '@mui/icons-material/PeopleOutlined';
 import FolderSharedOutlinedIcon from '@mui/icons-material/FolderSharedOutlined';
 import HandshakeOutlinedIcon from '@mui/icons-material/HandshakeOutlined';
+import SmartToyIcon from '@mui/icons-material/SmartToy';
 import { ROUTES } from '@/constans/routes';
 import { ROLES } from '@/constans/roles';
 
@@ -71,5 +72,12 @@ export const sideBarMenuItems = [
     icon: <HandshakeOutlinedIcon />,
     role: ROLES.ADMIN,
     link: ROUTES.ADMIN_MARKETPLACE
+  },
+  {
+    id: 35,
+    title: 'export_assistant', // Title for the new menu item
+    icon: <SmartToyIcon />, // Icon for the new menu item
+    role: ROLES.USER, // Assuming it's for the user role
+    link: '/export-assistant' // Temporary link, it will be replaced in the Sidebar component
   },
 ];

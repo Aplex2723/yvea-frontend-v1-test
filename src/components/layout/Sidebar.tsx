@@ -35,6 +35,16 @@ export default function Sidebar() {
     router.push(ROUTES.HOME);
   };
 
+  // Function to get cookie value by name
+  const getCookie = (name) => {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  };
+
+  const token = getCookie('access_token'); // Retrieve the token from cookies
+  const exportAssistantLink = `https://export-assistant.azurewebsites.net/?token=${token}`; // Construct the URL for Export Assistant
+
   return (
     <Drawer
       sx={{
@@ -78,7 +88,7 @@ export default function Sidebar() {
                   <SideBarLink
                     title={t(item.title)}
                     active={router.asPath === item.link}
-                    link={item.link}
+                    link={item.title === 'export_assistant' ? exportAssistantLink : item.link} // Use the constructed link for Export Assistant
                     icon={item.icon}
                   />
                 </ListItem>
