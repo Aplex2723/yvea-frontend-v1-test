@@ -35,17 +35,9 @@ export default function Sidebar() {
     router.push(ROUTES.HOME);
   };
 
-  // Function to get cookie value by name
-  const getCookie = (name) => {
-    const value = `; ${document.cookie}`;
-    const parts = value.split(`; ${name}=`);
-    if (parts.length === 2) return parts.pop().split(';').shift();
-  };
-
-  const token = getCookie('access_token'); // Retrieve the token from cookies
-  console.log(`JWT: ${token}`)
+  const token = localStorage.getItem('access_token'); // Retrieve the token from cookies
+  console.log(`Token: ${token}`)
   const exportAssistantLink = `https://export-assistant.azurewebsites.net/?token=${token}`; // Construct the URL for Export Assistant
-  console.log(`Link to assistant: ${exportAssistantLink}`)
 
   return (
     <Drawer
@@ -83,7 +75,7 @@ export default function Sidebar() {
           />
         </Toolbar>
         <List>
-          {sideBarMenuItems.map(
+        {sideBarMenuItems.map(
             (item) =>
               item.role === roleName && (
                 <ListItem key={item.id}>
