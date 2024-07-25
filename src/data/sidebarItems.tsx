@@ -5,7 +5,8 @@ import FlagOutlinedIcon from '@mui/icons-material/FlagOutlined';
 import PeopleOutlinedIcon from '@mui/icons-material/PeopleOutlined';
 import FolderSharedOutlinedIcon from '@mui/icons-material/FolderSharedOutlined';
 import HandshakeOutlinedIcon from '@mui/icons-material/HandshakeOutlined';
-import SmartToyIcon from '@mui/icons-material/SmartToy';
+import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
+import TravelExploreIcon from '@mui/icons-material/TravelExplore';
 import { ROUTES } from '@/constans/routes';
 import { ROLES } from '@/constans/roles';
 
@@ -13,7 +14,7 @@ export const sideBarMenuItems = [
   {
     id: 0,
     title: 'request_tracking',
-    icon: <InsertChartOutlinedIcon />,
+    icon: <TravelExploreIcon />,
     role: ROLES.USER,
     link: ROUTES.USER_DASHBOARD
   },
@@ -76,7 +77,7 @@ export const sideBarMenuItems = [
   {
     id: 35,
     title: 'export_assistant', // Title for the new menu item
-    icon: <SmartToyIcon />, // Icon for the new menu item
+    icon: <AutoAwesomeIcon />, // Icon for the new menu item
     role: ROLES.USER, // Assuming it's for the user role
     link: '/export-assistant' // Temporary link, it will be replaced in the Sidebar component
   },
